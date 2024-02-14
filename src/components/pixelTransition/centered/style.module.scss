@@ -1,0 +1,40 @@
+.pixelBackground {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+  
+    .column {
+      width: 5vw;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+  
+      .block {
+        width: 100%;
+        height: 5vw;
+        animation: colorChange 5s infinite alternate; // Adjust timing as needed
+      }
+    }
+  }
+  
+  @keyframes colorChange {
+    25% {
+      background-color: #B288C0;
+    }
+    50% {
+      background-color: #04724D;
+    }
+    0% {
+      background-color: #F0F7F4;
+    }
+    100% {
+      background-color: #102B3F;
+    }
+    75% {
+      background-color: #F0F7F4;
+    }
+  }
+  
